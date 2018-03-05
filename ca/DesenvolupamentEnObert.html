@@ -1,0 +1,1191 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3. Desenvolupament en obert &mdash; Guia per gestionar projectes de Programari Lliure 0.1 documentació</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/banner.css" type="text/css" />
+  
+    <link rel="stylesheet" href="_static/sphinx-needs/modern.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Índex"
+              href="genindex.html"/>
+        <link rel="search" title="Cerca" href="search.html"/>
+    <link rel="top" title="Guia per gestionar projectes de Programari Lliure 0.1 documentació" href="index.html"/>
+        <link rel="next" title="4. Aspectes legals" href="AspectesLegals.html"/>
+        <link rel="prev" title="2. Organització d’aquesta guia" href="Organitzacio.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Guia per gestionar projectes de Programari Lliure
+          
+
+          
+            
+            <img src="_static/CS5_marca_1_tinta.svg" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Continguts:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduccio.html">1. Introducció</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Organitzacio.html">2. Organització d’aquesta guia</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Desenvolupament en obert</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#treballar-en-obert-des-del-dia-1">3.1. Treballar en obert des del «dia 1»</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#contractacio-per-desenvolupar-en-obert">3.2. Contractació per desenvolupar en obert</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#difusio-del-projecte">3.3. Difusió del projecte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#empaquetat-i-desplegament">3.4. Empaquetat i desplegament</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#formats-i-estandards-oberts">3.5. Formats i estàndards oberts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#internacionalitzacio">3.6. Internacionalització</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#obrir-un-codi-que-era-tancat">3.7. Obrir un codi que era tancat</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="AspectesLegals.html">4. Aspectes legals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LlistatsDeMesures.html">5. Annex: Llistats de mesures i recomanacions per etiquetes</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Guia per gestionar projectes de Programari Lliure</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>3. Desenvolupament en obert</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/DesenvolupamentEnObert.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+
+
+
+
+
+<div class="section" id="desenvolupament-en-obert">
+<h1>3. Desenvolupament en obert<a class="headerlink" href="#desenvolupament-en-obert" title="Link permanent a aquest títol">¶</a></h1>
+<div class="section" id="treballar-en-obert-des-del-dia-1">
+<span id="treballar-en-obert-dia-1"></span><h2>3.1. Treballar en obert des del «dia 1»<a class="headerlink" href="#treballar-en-obert-des-del-dia-1" title="Link permanent a aquest títol">¶</a></h2>
+<p>Les mesures d’aquest apartat tenen a veure amb l’obertura del projecte i que cal
+posar en pràctica des del primer dia de la fase de desenvolupament, ja que quant
+més temps es gestiona un projecte de forma tancada, més costós és després
+obrir-lo. Si s’espera massa, pot ser que algunes mesures no s’arribin a
+implementar mai, ja que el seu cost resultaria prohibitiu.</p>
+<p>Treballar en obert vol dir que els següents elements son públicament
+accessibles (per lectura), en formats oberts i sense haver d’usar eines
+privatives o contractar serveis de pagament, des del dia 1 del projecte:</p>
+<ul class="simple">
+<li>El repositori de codi.</li>
+<li>El gestor d’incidències (on, entre d’altres, es notifiquen i
+gestionen els defectes).</li>
+<li>Els documents de disseny.</li>
+<li>La documentació d’usuari/-a.</li>
+<li>Els canals de comunicació on l’equip de desenvolupament pren les
+decisions tècniques.</li>
+</ul>
+<p>Treballar en obert NO vol dir (necessàriament) que:</p>
+<ul class="simple">
+<li>Persones externes al projecte tinguin accés d’escriptura al
+repositori (son lliures de copiar el codi en un repositori propi i
+modificar-lo allà).</li>
+<li>Tothom tingui permís per escriure notificacions de defectes i
+intervenir al gestor d’incidències, cada projecte pot triar la seva
+política de QA.</li>
+<li>L’equip del projecte hagi de llegir i respondre totes les
+notificacions de defectes (si estan obertes per escriptura) ni totes
+les preguntes als canals de comunicació oberts.</li>
+<li>L’equip del projecte hagi de revisar totes les suggerències i
+contribucions (<em>pull requests</em>, <em>patches</em>) que rebi, si es considera
+que els recursos estan millor invertits en una altra tasca.</li>
+</ul>
+<p>És molt important que tots els caps de projecte es llegeixin els
+següents apartats, on es justifica abastament aquesta mesura:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://producingoss.com/en/setting-tone.html#be-open-from-day-one">http://producingoss.com/en/setting-tone.html#be-open-from-day-one</a></li>
+<li><a class="reference external" href="http://producingoss.com/en/governments-and-open-source.html#starting-open-for-govs">http://producingoss.com/en/governments-and-open-source.html#starting-open-for-govs</a></li>
+</ul>
+<p>A mode de resum:</p>
+<ul class="simple">
+<li>Tenir canals de comunicació oberts des del dia 1 no vol dir que els
+«estranys» ens hagin de distreure des del dia 1. En el present
+document s’explica com deixar clar quins son els nostres compromisos,
+que podem modular a cada fase.</li>
+<li>És impossible compensar els incentius que tenen els desenvolupadors
+per fer coses de manera «ràpida i lletja» amb futures amenaces
+d’obertura. Si no s’actua en obert des de l’inici, inevitablement
+incorreran en <a class="reference external" href="https://en.wikipedia.org/wiki/Technical_debt">deute
+tecnològic</a> amb la
+intenció d’arreglar les coses en un futur (que mai arriba).</li>
+<li>Quan arriba el dia d“«obrir el codi», ens trobem de cop i volta que
+tenim:<ul>
+<li>Configuracions d’usuari específiques i contrasenyes dins del
+repositori.</li>
+<li>Notificacions de defectes que contenen informació sensible que no
+es pot fer pública.</li>
+<li>Correspondència entre desenvolupadors on es barreja informació
+tècnica útil amb opinions personals que no estaven pensades per a
+que tothom les pogués llegir.</li>
+<li>Dependències sobre components de software que no es poden usar en
+un projecte de codi obert, o que generen problemes de llicències.</li>
+<li>Documentació o procediments de <em>build</em> escrits amb eines
+propietàries que no permeten la seva publicació.</li>
+<li>(I una llista inacabable de coses).</li>
+</ul>
+</li>
+<li>L’obertura del codi provoca haver de prendre decisions difícils, que
+no es produirien si hagués estat obert des de l’inici (perdre temps
+netejant l’historial de defectes vs. crear-ne un de nou i perdre
+l’historial complert, etc).</li>
+<li>Es crea un gran «esdeveniment d’obertura» que suposa un alt risc per
+al projecte, ja que s’han de fer molts canvis de cop, i tot el
+projecte i les seves potencials vulnerabilitats queden exposades
+també de cop (i molts ulls, no sempre ben intencionats, estaran
+mirant). Abans de l’esdeveniment, això crea incertesa i preocupació.
+Després de l’esdeveniment, pot provocar una allau d’incidències que
+en condicions normals haguessin arribat escalonadament.</li>
+</ul>
+<span id="M_B0AB1"></span><dl class="need need-mesura docutils" id="m-b0ab1">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Establir la web de desenvolupament a l’espai GitHub de l’Ajuntament</span> <span class="needs-id">M_B0AB1</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Dia1</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>A la web de desenvolupament hi ha d’haver el repositori principal de
+codi, utilitzant Git com a eina de control de versions. Es crearà un
+projecte <code class="docutils literal"><span class="pre">https://github.com/AjuntamentDeBarcelona/NOM-DEL-PROJECTE</span></code>
+on es publicarà el codi. Que sigui el repositori principal vol dir que
+és el sistema de control de versions vinculat al gestor d’incidències (i
+possiblement a d’altres eines de desenvolupament com el sistema
+d’integració continua).</p>
+<p>Això no vol dir que no puguin haver-hi rèpliques (miralls) del
+repositori o parts del mateix en altres llocs (espais GitHub d’altres
+organitzacions, de desenvolupadors particulars, la pàgina web de les
+empreses adjudicatàries de contractes públics, etc).</p>
+<p>El nom del projecte a GitHub es recomana que sigui tot en minúscules i
+amb les paraules de què està format separades per guions. Per exemple:
+<a class="reference external" href="https://github.com/AjuntamentdeBarcelona/decidim-barcelona">https://github.com/AjuntamentdeBarcelona/decidim-barcelona</a>.</p>
+<p>El codi ha d’estar present en aquest lloc des de l’inici del projecte,
+sense esperar a que hi hagi <em>releases</em> públiques. El repositori ha de
+contenir com a mínim les següents branques:</p>
+<ul class="simple">
+<li>Una branca <code class="docutils literal"><span class="pre">master</span></code></li>
+</ul>
+<p>La raó de tenir les eines de desenvolupament integrades amb un
+repositori propi evita que un futur es vegin amenaçats actius importants
+del projecte com son l’historial d’incidències.</p>
+<p>Hi ha moltes alternatives viables i raonables a GitHub, i fins i tot
+algunes alternatives viables a Git com a programari de control de
+versions, però GitHub ofereix prous avantatges com per què sigui la
+opció per defecte:</p>
+<ul class="simple">
+<li>És la plataforma més utilitzada per projectes de codi obert, dóna
+molta visibilitat.</li>
+<li>La majoria de desenvolupadors la coneixen i no han d’aprendre noves
+eines i procediments ad-hoc per al projecte.</li>
+<li>Ofereix una bona integració amb la resta d’infraestructura tècnica i
+social d’un projecte: gestió d’incidències, integració continua,
+canals de comunicació entre desenvolupadors, etc.</li>
+<li>Permet també guardar i mostrar (part de) la documentació d’un
+projecte, que pot ser una wiki. La presentació de la informació és
+suficientment agradable com per permetre aplaçar la construcció d’una
+web orientada a usuaris del projecte.</li>
+</ul>
+<p class="last"><strong>Inconvenient</strong>. Tot i ser un servei gratuït per un gran ventall de
+possibles usos, no tot el codi de la infraestructura que hi ha darrera
+de GitHub és lliure, i en darrera instància s’està establint una
+dependència amb una empresa que no sabem com evolucionarà en el futur.
+Més endavant poden aparèixer opcions que facin reconsiderar aquesta
+recomanació de fer servir GitHub com a opció per defecte.</p>
+</dd>
+</dl>
+<span id="A_BEE4E"></span><dl class="need need-alternativa docutils" id="a-bee4e">
+<dt><span class="needs-type">Alternativa</span>: <span class="needs-title">Establir el web de desenvolupament a un lloc públic diferent del GiHub de l’Ajuntament</span> <span class="needs-id">A_BEE4E</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Pot haver-hi motius que facin recomanable tenir el repositori principal
+(el vinculat al gestor d’incidències) en llocs com:</p>
+<ul class="simple">
+<li>L’espai GitHub d’una altra organització</li>
+<li>BitBucket o d’altres plataformes similars</li>
+<li>Un portal Gitlab d’alguna organització que participi en el
+desenvolupament del projecte (o en un futur un portal Gitlab de
+l’Ajuntament de Barcelona)</li>
+</ul>
+<p>Alguns d’aquests motius poden ser:</p>
+<ul class="simple">
+<li>És un projecte on intervenen més participants del sector públic, i es
+crea una consorci o organització ad-hoc.</li>
+<li>L’empresa que desenvolupa té un fort lideratge sobre el projecte, més
+gran que el que pugui tenir l’Ajuntament, i vol tenir la
+infraestructura bàsica sota el seu control.</li>
+</ul>
+<p>Si s’opta per aquesta alternativa, s’ha de tenir en compte que:</p>
+<ul class="last simple">
+<li>No podem renunciar a Git com a sistema de control de versions: és
+l’eina molt majoritàriament utilitzada avui en dia i que tots els
+desenvolupadors coneixen, i facilita unes bones pràctiques de gestió
+de projectes en obert que amb sistemes més antics (com CSV o
+Subversion) resulten molt més farragoses. Si determinats procediments
+s’han d’executar necessàriament sobre una altra eina, per exemple
+Subversion, la solució és fer el desenvolupament en obert sobre Git,
+i mantenir un mirall Subversion automatitzat utilitzant la comanda
+<code class="docutils literal"><span class="pre">git</span> <span class="pre">svn</span> <span class="pre">dcommit</span></code>, com s’explica per exemple a
+<a class="reference external" href="http://www.kerrybuckley.org/2009/10/06/maintaining-a-read-only-svn-mirror-of-a-git-repository/">http://www.kerrybuckley.org/2009/10/06/maintaining-a-read-only-svn-mirror-of-a-git-repository/</a>.</li>
+<li>En qualsevol cas hi ha d’haver una rèplica actualitzada del
+repositori principal a l’espai GitHub de l’Ajuntament, per donar
+visibilitat a totes les contribucions a projectes de codi obert que
+realitza.</li>
+<li>Al fitxer <code class="docutils literal"><span class="pre">README</span></code> contingut (i mostrat) a l’espai GitHub de
+l’Ajuntament, a l’espai GitHub.io i a la resta de llocs amb enllaç al
+codi font, d’indicarà quin és el repositori (o repositoris) principal
+on es porta a terme el desenvolupament.</li>
+<li>Siguin on siguin, tant l’eina de gestió d’incidències com el sistema
+d’integració continua han de ser públics i s’han de poder utilitzar
+per part de tothom sense pagar subscripcions a cap servei.</li>
+<li>Tot el codi font del projecte ha de ser descarregable per qualsevol
+persona en tot moment. GitHub facilita això proveint de botons per
+descarregar un arxiu <code class="docutils literal"><span class="pre">zip</span></code> o bé mostrant les comandes necessàries
+per clonar el repositori utilitzant Git. Si No es fa servir GitHub
+s’ha d’aconseguir que el lloc públic del repositori faciliti també
+aquestes dues modalitats de descàrrega (arxiu <code class="docutils literal"><span class="pre">zip</span></code> o <code class="docutils literal"><span class="pre">tar.gz</span></code> i
+comanda <code class="docutils literal"><span class="pre">git</span> <span class="pre">clone</span></code>).</li>
+</ul>
+</dd>
+</dl>
+<span id="M_35AE1"></span><dl class="need need-mesura docutils" id="m-35ae1">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Vincular el repositori principal al gestor d’incidències de GitHub</span> <span class="needs-id">M_35AE1</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Dia1</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>De nou és la opció per defecte, en aquest cas per la seva vinculació
+automàtica amb el repositori de GitHub i perquè compleix els nostres
+requeriments d’accessibilitat i transparència.</p>
+<p>S’hauran d’establir des de l’inici algunes categories bàsiques
+d’incidència, que després poden modificar-se segons les necessitats de
+cada projecte: {- TODO: bla -}</p>
+<p>S’ha de tenir en compte que el gestor d’incidències no és només
+important per al dia a dia dels desenvolupadors, sinó que molts
+observadors del projecte també el fan servir com a mesura de fins a quin
+punt estan davant d’un projecte seriós.</p>
+<p>Té les següents funcions:</p>
+<ul class="simple">
+<li>Notificar els defectes detectats (<em>bug tracker</em>) per part tant
+d’usuaris com de desenvolupadors. També fer-ne transparent el
+tractament, evolució i eventual solució. És important que els
+<em>commit</em> que resolen un defecte o assenyalin en el seu missatge.
+<a class="reference external" href="https://help.github.com/articles/closing-issues-using-keywords/">GitHub té una sintaxi especial per fer
+això</a>.</li>
+<li>Fer seguiment de les tasques pendents. Això permet després vincular
+un o més <em>commit</em> amb el tancament d’una tasca. També poder veure a
+qui s’assignen les tasques i com es prioritzen. Opcionalment s’hi
+poden especificar dates estimades de realització. Tot plegat
+contribueix a la transparència i traçabilitat del procés de
+desenvolupament.</li>
+<li>Fer seguiment de com es gestionen les contribucions de diferents
+parts, mitjançant el mecanisme de <em>pull request</em>. Fins i tot es pot
+obrir el gestor d’incidències a peticions de funcionalitats (<em>feature
+request</em>) i es pot utilitzar l’espai de GitHub com a lloc on es
+prioritzen i gestionen de manera pública.</li>
+</ul>
+<p class="last">Aquest gestor d’incidències ha d’estar operatiu i públic durant tota la
+vida útil del producte, més enllà de la duració que tinguin els
+contractes amb l’Ajuntament.</p>
+</dd>
+</dl>
+<span id="A_D4FA0"></span><dl class="need need-alternativa docutils" id="a-d4fa0">
+<dt><span class="needs-type">Alternativa</span>: <span class="needs-title">Vincular el repositori principal a un gestor d’incidències públic</span> <span class="needs-id">A_D4FA0</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Dia1</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Com a mínim ha de fer les funcions pròpies d’un sistema de notificació i
+seguiment de defectes (<em>bug tracker</em>), però pot complir més funcions,
+com s’explica a [Vincular repo a gestor d’incidències de GitHub].</p>
+<p>Si es fa servir aquesta alternativa, tenir en compte que:</p>
+<ul class="last">
+<li><p class="first">Necessàriament ha de ser públic, en el sentit que:</p>
+<ul class="simple">
+<li>Tothom ha de poder registrar-se com usuari del sistema sense pagar
+cap subscripció, i així participar en el desenvolupament.</li>
+<li>Tothom ha de poder visualitzar les incidències i fer-ne un
+seguiment, sense necessitat de registrar-se com usuari.</li>
+</ul>
+<p>El <em>issue tracker</em> de GitHub compleix aquestes dues condicions.</p>
+</li>
+<li><p class="first">Ha d’estar enllaçat des del fitxer <code class="docutils literal"><span class="pre">README</span></code> del repositori de codi.</p>
+</li>
+<li><p class="first">Si es vol tenir el gestor d’incidències en infraestructura pròpia de
+l’Ajuntament, utilitzar una de les següents eines lliures: Gitlab,
+Redmine, Trac.</p>
+</li>
+</ul>
+</dd>
+</dl>
+<span id="A_36869"></span><dl class="need need-alternativa docutils" id="a-36869">
+<dt><span class="needs-type">Alternativa</span>: <span class="needs-title">Vincular el repositori principal a un sistema d’integració contínua de codi obert</span> <span class="needs-id">A_36869</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Dia1</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Recomanem una de les següents eines:</p>
+<ul class="last simple">
+<li>Jenkins</li>
+<li>Gitlab CI</li>
+<li>Travis CI</li>
+</ul>
+</dd>
+</dl>
+<span id="M_AD503"></span><dl class="need need-mesura docutils" id="m-ad503">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Pujar el codi al repositori principal</span> <span class="needs-id">M_AD503</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Dia1</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Fer descarregable tot el codi font del projecte. De dues maneres:</p>
+<ul class="last simple">
+<li>Des del repositori Git principal amb <code class="docutils literal"><span class="pre">git</span> <span class="pre">clone</span></code>.</li>
+<li>En un únic arxiu en format <code class="docutils literal"><span class="pre">zip</span></code> o <code class="docutils literal"><span class="pre">tar.gz</span></code>, com a mínim des del
+moment que existeixi una primera <em>release</em> pública.</li>
+</ul>
+</dd>
+</dl>
+<span id="M_F2717"></span><dl class="need need-mesura docutils" id="m-f2717">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Dia1; Pujar un fitxer ``README`</span> al repositori principal` <span class="needs-id">M_F2717</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Ha d’incloure la declaració de propòsit i la resta d’informacions que al
+llarg d’aquest document es menciona que s’han d’incloure en el
+<code class="docutils literal"><span class="pre">README</span></code>.</p>
+<p>S’ha de redactar en anglès i el format ha de ser text amb algun
+llenguatge de marques lleuger. Pot no tenir extensió si conté només text
+pla o una extensió que indiqui amb quin format de marques s’ha
+d’interpretar (és a dir, en realitat es el fitxer tindrà nom
+<code class="docutils literal"><span class="pre">README.md</span></code> si està escrit en Markdown).</p>
+<p class="last">El contingut d’aquest fitxer (concretament la versió que hi hagi penjada
+a la branca <code class="docutils literal"><span class="pre">master</span></code>), formatat segons les convencions del llenguatge
+de marques que s’hagi utilitzat, és el que GitHub mostra com a portada
+de la web de desenvolupament. Per tant, convé comprovar que el format és
+correcte i que es visualitza bé en un navegador web.</p>
+</dd>
+</dl>
+<span id="M_39DFE"></span><dl class="need need-mesura docutils" id="m-39dfe">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Implementar procediments de *build* i instal·lació amb eines lliures i d’ús estès</span> <span class="needs-id">M_39DFE</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Dia1</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>És molt important no esperar gens a construir i documentar un sistema de
+<em>build</em> del programari, ja que sense això l’esforç que ha de realitzar
+qualsevol desenvolupador per provar l’eina serà probablement massa gran
+com perquè ningú ho intenti.</p>
+<p>Per suposat no es pot obligar als usuaris i potencials col·laborador
+d’un projecte de codi obert a dependre d’eines que no siguin alhora
+programari lliure, i dins d’aquestes convé triar les d’ús més estès i
+que resultin més familiars a la majoria de desenvolupadors. Això últim
+pot variar d’una comunitat a una altra. Alguns exemples d’eines de
+<em>build</em> (algunes també serveixen per als procediments de configuració i
+instal·lació) d’ús comú i que recomanem son:</p>
+<ul class="last simple">
+<li>Per a projectes Java: Maven, Ant (també serveix per altres
+llenguatges).</li>
+<li>Per a projectes Python recomanem seguir els consell de
+<a class="reference external" href="http://python-packaging.readthedocs.io/en/latest/index.html">http://python-packaging.readthedocs.io/en/latest/index.html</a>, que
+inclouen també informació sobre empaquetament.</li>
+<li>Per a projectes JavaScript (i per <em>front-end</em> en general): Gulp.js.</li>
+<li>Per a projectes Ruby: Rake.</li>
+<li>Ús general: CMake, Nix.</li>
+</ul>
+</dd>
+</dl>
+<span id="M_B4B95"></span><dl class="need need-mesura docutils" id="m-b4b95">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Dia1; Pujar el text de la llicència al repositori principal</span> <span class="needs-id">M_B4B95</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>La llicència anirà en text pla en un fitxer anomenat <code class="docutils literal"><span class="pre">LICENSE</span></code> (sense
+extensió), al directori arrel del repositori.</p>
+<p>El text de les dues llicències recomanades (que cal copiar de forma
+literal) el podem trobar a:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://www.gnu.org/licenses/agpl.txt">https://www.gnu.org/licenses/agpl.txt</a></li>
+<li><a class="reference external" href="https://joinup.ec.europa.eu/sites/default/files/inline-files/EUPL%20v1_2%20EN(1).txt">https://joinup.ec.europa.eu/sites/default/files/inline-files/EUPL%20v1_2%20EN(1).txt</a></li>
+</ul>
+<p class="last">El fitxer <code class="docutils literal"><span class="pre">LICENSE</span></code> ha d’estar en anglès. En el cas d’utilitzar la
+llicència EUPL-1.2, que té traduccions oficials, podem opcionalment
+incloure fitxers <code class="docutils literal"><span class="pre">LICENSE.ca.txt</span></code> i <code class="docutils literal"><span class="pre">LICENSE.es.txt</span></code>. Les diferents
+traduccions es troben a
+<a class="reference external" href="https://joinup.ec.europa.eu/page/eupl-text-11-12">https://joinup.ec.europa.eu/page/eupl-text-11-12</a>.</p>
+</dd>
+</dl>
+<span id="M_0C6F3"></span><dl class="need need-mesura docutils" id="m-0c6f3">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Publicar unes breus Directrius per desenvolupadors (*Developer Guidelines*)</span> <span class="needs-id">M_0C6F3</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Dia1</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Aquesta guia estableix les convencions tècniques i socials que
+determinen les interaccions entre desenvolupadors, i entre
+desenvolupadors i usuaris. És d’aplicació per tots els desenvolupadors,
+tant els contractats per l’Ajuntament, com els externs, com el personal
+del mateix Ajuntament.</p>
+<p>S’ha de redactar en anglès i ha de ser, o bé una pàgina de la pròpia
+wiki de GitHub, o bé un fitxer de text amb llenguatge de marques
+lleuger.</p>
+<p>La guia pot créixer amb al temps, però a l’inici només cal deixar clares
+tres coses:</p>
+<ol class="arabic simple">
+<li>Quins son els canals de comunicació de que disposa el projecte i per
+a què s’utilitza cadascun.</li>
+<li>Instruccions de com reportar defectes (<em>bugs</em>) i de com fer
+contribucions al projecte.</li>
+<li>Una descripció breu de com és la governança del projecte: qui i com
+pren les decisions. En molts casos només caldrà dir que durant la
+duració del contracte en vigor l’Ajuntament és qui prioritza les
+funcionalitats a desenvolupar, els defectes a arreglar. També té la
+última paraula sobre les solucions tècniques a adoptar, les
+contribucions a integrar i les versions a publicar. Es pot dir que en
+un futur s’estudiarà un model de governança adequat a l’evolució de
+les circumstàncies del projecte.</li>
+</ol>
+<p>Aquestes Directrius per desenvolupadors han d’estar enllaçades com a
+mínim des de:</p>
+<ul class="last simple">
+<li>El fitxer <code class="docutils literal"><span class="pre">README</span></code> del repositori principal.</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="contractacio-per-desenvolupar-en-obert">
+<h2>3.2. Contractació per desenvolupar en obert<a class="headerlink" href="#contractacio-per-desenvolupar-en-obert" title="Link permanent a aquest títol">¶</a></h2>
+<span id="M_F60D2"></span><dl class="need need-mesura docutils" id="m-f60d2">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Adjudicar a entitats amb experiència en desenvolupament obert</span> <span class="needs-id">M_F60D2</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Contractar</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p class="last">Per moltes condicions que es posin al contracte, si l’empresa
+adjudicatària no té experiència participant en projectes de codi obert,
+el més probable és que el producte no acabi sent obert del tot. En la
+majoria de casos això no té perquè ser resultat d’una mala disposició,
+sinó fruit del desconeixement.</p>
+</dd>
+</dl>
+<span id="A_37AA2"></span><dl class="need need-alternativa docutils" id="a-37aa2">
+<dt><span class="needs-type">Alternativa</span>: <span class="needs-title">Fer un contracte secundari de validació i verificació independent (IV&amp;V)</span> <span class="needs-id">A_37AA2</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Contractar</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Contractar alguna entitat que sí tingui experiència demostrable en
+participar de manera sostinguda en projectes de codi obert. Aquesta
+entitat actuarà com un col·laborador extern del projecte i farà
+revisions de codi i anàlisis de processos, reportant directament a
+l’IMI.</p>
+<p>En un projecte de codi obert el que s’està contractant no és només el
+codi, sinó també el procés.</p>
+<p class="last">Afegir aquest servei a la oficina tècnica del projecte.</p>
+</dd>
+</dl>
+<span id="A_06940"></span><dl class="need need-alternativa docutils" id="a-06940">
+<dt><span class="needs-type">Alternativa</span>: <span class="needs-title">Tenir en compte l’experiència en projectes de codi obert que acreditin els concursants en l’adjudicació</span> <span class="needs-id">A_06940</span></dt>
+<dd><div class="first last line-block">
+<div class="line">tags: <span class="needs-tag">Contractar</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+</dd>
+</dl>
+<span id="M_87A71"></span><dl class="need need-mesura docutils" id="m-87a71">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Demanar als concursants que acreditin experiència en projectes de codi obert dels participants</span> <span class="needs-id">M_87A71</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Contractar</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p class="last">Ho han de fer aportant referències a la seva participació individual en
+repositoris i fòrums oberts (StackOverflow, etc.), dels projectes en que
+hagin participat.</p>
+</dd>
+</dl>
+<span id="R_F1019"></span><dl class="need need-recomanacio docutils" id="r-f1019">
+<dt><span class="needs-type">Recomanació</span>: <span class="needs-title">Partir el projecte en grups de funcionalitat que es puguin licitar en diferents lots</span> <span class="needs-id">R_F1019</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Contractar</span> <span class="needs-tag">NouProducte</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Bé sigui contractant per lots, bé sigui externalitzant tasques concretes
+com la revisió de codi i del desplegament, com estableix la
+<a class="reference external" href="#fer-contracte-validacio-independent">Alternativa: Fer un contracte secundari de validació i verificació
+(V&amp;V) independent</a>.</p>
+<p>A més de ser una política alineada amb la Guia de contractació
+tecnològica, és molt favorable pels interessos del projecte disseminar
+el coneixement sobre el producte. Les <em>reserves de coneixement
+distribuïdes</em> son una de les principals fortaleses dels projectes de
+codi obert.</p>
+<p class="last">També ajuda molt a que des de l’inici del desenvolupament s’estableixin
+processos de treball en obert.</p>
+</dd>
+</dl>
+<span id="M_A0235"></span><dl class="need need-mesura docutils" id="m-a0235">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Obligar als adjudicataris a parametritzar tot usant fitxers de configuració</span> <span class="needs-id">M_A0235</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Contractar</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p class="last">No utilitzar <em>valors màgics</em> al codi.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="difusio-del-projecte">
+<h2>3.3. Difusió del projecte<a class="headerlink" href="#difusio-del-projecte" title="Link permanent a aquest títol">¶</a></h2>
+<span id="M_2E07A"></span><dl class="need need-mesura docutils" id="m-2e07a">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Escollir un bon nom per al projecte</span> <span class="needs-id">M_2E07A</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Això és més important en projectes de codi obert que en projectes
+tradicionals perquè adquirir usuaris i desenvolupadors fora dels confins
+de l’Ajuntament pot determinar el grau d’èxit del projecte.</p>
+<p class="last">Es poden trobar algunes indicacions més concretes a
+<a class="reference external" href="http://producingoss.com/en/getting-started.html#choosing-a-name">http://producingoss.com/en/getting-started.html#choosing-a-name</a>.</p>
+</dd>
+</dl>
+<span id="R_DE631"></span><dl class="need need-recomanacio docutils" id="r-de631">
+<dt><span class="needs-type">Recomanació</span>: <span class="needs-title">Adquirir el nom en els espais d’Internet importants</span> <span class="needs-id">R_DE631</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p class="last">Per projectes grans és recomanable pensar des del principi en quins
+llocs i plataformes d’Internet s’haurà de tenir presència i assegurar la
+disponibilitat dels dominis o noms d’usuari corresponents. A més d’un o
+més dominis ICANN propis, pot ser que un projecte vulgui tenir presència
+a GitHub o Twitter, per exemple. Utilitzar a tot arreu el mateix nom
+d’usuari facilita la identificació del projecte per part de persones que
+encara no hi estan massa involucrades.</p>
+</dd>
+</dl>
+<span id="M_02C46"></span><dl class="need need-mesura docutils" id="m-02c46">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Redactar una declaració de propòsit clara i posar-la a llocs destacats</span> <span class="needs-id">M_02C46</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Integració</span> <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>La declaració de propòsit és un text curt, d’un o dos paràgrafs, que
+permet a la gent decidir en 30 segons si els interessa seguir llegint
+sobre el projecte o no. Ha d’anar acompanyada dels enllaços necessaris
+per si la resposta afirmativa. En el redactat es pot donar per suposats
+uns coneixements mínims de l’àrea d’aplicació del projecte. Les persones
+que no disposen d’aquests coneixements probablement no estaran
+interessades en el projecte.</p>
+<p>El text s’ha de tenir redactat com a mínim en anglès i en català, per
+utilitzar la versió que convingui en cada cas.</p>
+<p>Ha d’aparèixer com a mínim als següents llocs:</p>
+<ul class="last simple">
+<li>La pàgina d’inici de la web orientada a usuaris del projecte, cas de
+tenir-ne. S’ha de poder veure sense necessitat de fer scroll en un
+ordinador de sobretaula.</li>
+<li>El fitxer <code class="docutils literal"><span class="pre">README</span></code> del repositori principal.</li>
+<li>El llistat de projectes a <a class="reference external" href="https://ajuntamentdebarcelona.github.io">https://ajuntamentdebarcelona.github.io</a>.</li>
+<li>Cada vegada que el projecte s’introdueix a un repositori o llistat de
+projectes de codi obert, per exemple el <a class="reference external" href="https://joinup.ec.europa.eu/">Join Up de la Unió
+Europea</a>.</li>
+</ul>
+</dd>
+</dl>
+<span id="M_B8AAA"></span><dl class="need need-mesura docutils" id="m-b8aaa">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Especificar en llocs destacats que el projecte és lliure</span> <span class="needs-id">M_B8AAA</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Aquesta mesura fa que els potencials col·laboradors no hagin de buscar
+massa per saber si estaran disposats a contribuir o no al projecte.</p>
+<p>És important, a més, indicar sota quina llicència concreta es
+distribueix el programari (incloent la versió), utilitzant el nom
+complert o bé l’identificador, el que més convingui en cada cas,
+exactament com apareixen a <a class="reference external" href="https://spdx.org/licenses/">https://spdx.org/licenses/</a>.</p>
+<p>Especificar la llicència com a mínim en els següents llocs:</p>
+<ul class="simple">
+<li>La pàgina d’inici de la web orientada a usuaris del projecte, cas de
+tenir-ne. S’ha de poder veure sense necessitat de fer <em>scroll</em> en un
+ordinador de sobretaula.</li>
+<li>El fitxer <code class="docutils literal"><span class="pre">README</span></code> del repositori principal.</li>
+<li>El llistat de projectes a <a class="reference external" href="https://ajuntamentdebarcelona.github.io">https://ajuntamentdebarcelona.github.io</a>.</li>
+<li>Cada vegada que el projecte s’introdueix a un repositori o llistat de
+projectes de codi obert, per exemple el <a class="reference external" href="https://joinup.ec.europa.eu/">Join Up de la Unió
+Europea</a>.</li>
+</ul>
+<p class="last">En quant a la web orientada a usuaris del projecte, és important no
+relegar aquesta informació a una pàgina de «descàrregues» o de
+«desenvolupament» que requereixi més d’un clic.</p>
+</dd>
+</dl>
+<span id="M_2BCCF"></span><dl class="need need-mesura docutils" id="m-2bccf">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Especificar en llocs fàcilment accessibles un llistat de funcionalitats</span> <span class="needs-id">M_2BCCF</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Serveix per què la gent acabi de decidir si el projecte pot cobrir o no
+les seves necessitats.</p>
+<p>Enllaçar de forma visible com a mínim des de:</p>
+<ul class="simple">
+<li>La pàgina d’inici de la web orientada a usuaris del projecte, cas de
+tenir-ne. L’enllaç s’ha de poder veure sense necessitat de fer scroll
+en un ordinador de sobretaula.</li>
+<li>El fitxer <code class="docutils literal"><span class="pre">README</span></code> del repositori principal.</li>
+</ul>
+<p>Millor en forma de llistat amb vinyetes i frases simples, o d’una manera
+encara més gràfica. Molts cops és una mena d’extensió de la <em>declaració
+de propòsit</em>.</p>
+<p>Si una funcionalitat encara no està implementada es pot especificar
+entre parèntesis: <em>planned</em> o <em>work-in-progress</em>.</p>
+<p class="last">Com s’explica amb més detall a la mesura <em>M: Especificar i mantenir una
+pàgina amb l’estat de desenvolupament del projecte</em>, no té sentit, i de
+fet pot ser molt contraproduent, falsejar o exagerar els veritables
+mèrits tècnics del producte.</p>
+</dd>
+</dl>
+<span id="M_3BFA7"></span><dl class="need need-mesura docutils" id="m-3bfa7">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Especificar en llocs fàcilment accessibles els principals requeriments tècnics</span> <span class="needs-id">M_3BFA7</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Per exemple quina arquitectura hardware/software es necessita per
+instal·lar-ho, quin sistema operatiu, etc. També és una informació
+necessària per què un potencial usuari esbrini si pot utilitzar la
+solució o no.</p>
+<p>Enllaçar de forma visible com a mínim des de:</p>
+<ul class="simple">
+<li>La pàgina d’inici de la web orientada a usuaris del projecte, cas de
+tenir-ne. L’enllaç s’ha de poder veure sense necessitat de fer scroll
+en un ordinador de sobretaula.</li>
+<li>El fitxer <code class="docutils literal"><span class="pre">README</span></code> del repositori principal.</li>
+</ul>
+<p class="last">Millor en forma de llistat amb vinyetes i frases simples.</p>
+</dd>
+</dl>
+<span id="R_0D453"></span><dl class="need need-recomanacio docutils" id="r-0d453">
+<dt><span class="needs-type">Recomanació</span>: <span class="needs-title">Especificar en llocs fàcilment accessibles les diferències amb productes similars</span> <span class="needs-id">R_0D453</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Destacar sobretot els avantatges respecte les eines més conegudes i ben
+establertes, lliures o propietàries, però no amagar les limitacions.</p>
+<p class="last">Enllaçar de forma visible des de la web orientada a usuaris del
+projecte, cas de tenir-ne. Les diferències estrictament tècniques també
+es poden enllaçar des de la web de desenvolupament.</p>
+</dd>
+</dl>
+<span id="M_03156"></span><dl class="need need-mesura docutils" id="m-03156">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Especificar i mantenir una pàgina amb l’estat de desenvolupament del projecte</span> <span class="needs-id">M_03156</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Es tracta d’escriure un llistat, que es va actualitzant periòdicament a
+cada <em>release</em> o fita important, que contingui:</p>
+<ul class="simple">
+<li>Les <em>release</em> anteriors, amb la data de publicació i els principals
+canvis que s’hi van introduir.</li>
+<li>Futures <em>release</em> o fites del projecte amb data temptativa de
+realització, a mode de full de ruta molt esquemàtic.</li>
+</ul>
+<p>L’objectiu d’aquesta pàgina és contribuir a visibilitzar tres coses:</p>
+<ul class="simple">
+<li>Quines fites s’han assolit ja.</li>
+<li>Cap a on es dirigeix el projecte i com de lluny es troben les fites
+que s’espera assolir.</li>
+<li>Com d’actius son el projecte i la seva comunitat, i com de ben
+mantingut està el codi.</li>
+</ul>
+<p>Enllaçar com a mínim des de:</p>
+<ul class="simple">
+<li>La web orientada a usuaris del projecte.</li>
+<li>El fitxer <code class="docutils literal"><span class="pre">README</span></code> del repositori principal.</li>
+</ul>
+<p>És molt important ser transparents i no falsejar l’estat real del
+projecte. És més perniciós atraure usuaris amb expectatives que no es
+podran complir que no pecar de conservadorisme a l’hora d’exposar el
+progrés realitzat o esperat. Tots els projectes tenen defectes i
+facilita la vida a tothom (desenvolupadors, promotors del projecte i
+potencials usuaris externs) tractar-los amb transparència. Molts
+projectes de programari lliure exitosos contenen a la seva pàgina un
+apartat titulat <em>Known bugs</em>, i alguns d’aquests defectes romanen allà
+durant anys.</p>
+<p class="last">A més, en el cas del codi obert, tot el codi i tot el procés de
+desenvolupament està a la vista de tothom, i tothom pot instal·lar i
+provar el producte. Qualsevol pot refutar les nostres afirmacions si no
+son certes, com s’explica a
+<a class="reference external" href="http://producingoss.com/en/marketing.html#goldfish-bowl">http://producingoss.com/en/marketing.html#goldfish-bowl</a>.</p>
+</dd>
+</dl>
+<span id="R_1EDF7"></span><dl class="need need-recomanacio docutils" id="r-1edf7">
+<dt><span class="needs-type">Recomanació</span>: <span class="needs-title">Establir mesures per visibilitzar millor el progrés i el grau d’activitat del projecte</span> <span class="needs-id">R_1EDF7</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Es poden posar indicadors i alimentadors automàtics a la pàgina d’inici
+de les webs (tant a la d’usuaris com la de desenvolupament), o en altres
+llocs, amb informacions que provinguin, per exemple, de:</p>
+<ul class="simple">
+<li>El repositori, per exemple els darrers missatges de <em>commit</em>.</li>
+<li>El sistema d’integració continua, per exemple quins <em>builds</em> o
+conjunts de testos han funcionat o fallat darrerament.</li>
+<li>El sistema de notificació d’incidències o defectes.</li>
+<li>Twitter del projecte o d’usuaris de l’aplicació.</li>
+</ul>
+<p>També es pot mostrar de manera gràfica una mena de calendari de progrés
+amb les diferents versions.</p>
+<p>Es pot agafar com exemple la manera que mostra la informació de
+<a class="reference external" href="https://launchpad.net/inkscape">projectes d’exemple el Launchpad
+d’Ubuntu</a>.</p>
+<p class="last">L’objectiu és enfortir i fer més visual tot allò esmentat a la <a class="reference external" href="#h:a22a9688-f8e2-473d-baf5-8989693a41c1">Mesura:
+Especificar i mantenir una pàgina amb l’estat de desenvolupament del
+projecte</a>.</p>
+</dd>
+</dl>
+<span id="R_51DDF"></span><dl class="need need-recomanacio docutils" id="r-51ddf">
+<dt><span class="needs-type">Recomanació</span>: <span class="needs-title">Negociar a priori la manera de fer visibles les aportacions patrocinades per l’Ajuntament</span> <span class="needs-id">R_51DDF</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>A l’Ajuntament de Barcelona li pot interessar que els projectes de
+programari que no han estat iniciats per l’Ajuntament, però als quals
+realitza contribucions de qualsevol tipus (extensions, traduccions,
+hores de treball de manteniment) reconeguin i donin publicitat a
+aquestes contribucions. La manera en que això es concreti dependrà de
+cada projecte i de la naturalesa de les aportacions. Alguns exemples
+poden ser:</p>
+<ul class="simple">
+<li>Esment en una llista pública d’entitats que participen o
+contribueixen al projecte.</li>
+<li>Aparició del logo de l’Ajuntament a la web del projecte.</li>
+</ul>
+<p class="last">És convenient, abans d’iniciar la col·laboració, parlar amb la comunitat
+de desenvolupament del projecte sobre quin reconeixement desitjaria
+obtenir l’Ajuntament en cada cas.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="empaquetat-i-desplegament">
+<h2>3.4. Empaquetat i desplegament<a class="headerlink" href="#empaquetat-i-desplegament" title="Link permanent a aquest títol">¶</a></h2>
+<span id="M_A69BE"></span><dl class="need need-mesura docutils" id="m-a69be">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Obligar a l’adjudicatari que fa el desplegament a usar el mateix codi publicat al repositori principal</span> <span class="needs-id">M_A69BE</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Contractar</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Com a condició de transparència, el codi font que en cada moment
+s’utilitza per construir (<em>build</em>) i desplegar els serveis en producció
+ha d’estar disponible en el repositori públic de l’Ajuntament,
+preferentment sota la branca <code class="docutils literal"><span class="pre">master</span></code>. Qualsevol <em>patch</em> de seguretat,
+millora o modificació de qualsevol tipus que s’apliqui al codi en
+producció s’ha de reflectir al repositori.</p>
+<p class="last">El codi disponible al repositori públic és el que està cobert totalment
+per una llicència lliure. No s’hi pot fer cap afegit.</p>
+</dd>
+</dl>
+<span id="R_FBCB3"></span><dl class="need need-recomanacio docutils" id="r-fbcb3">
+<dt><span class="needs-type">Recomanació</span>: <span class="needs-title">Establir una política de versions explícita en el fitxer ``README``</span> <span class="needs-id">R_FBCB3</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Convé que cada repositori tingui una política de versions explícita. Els
+projectes de programari utilitzen normalment identificadors de versions
+basats en seqüències de nombres de l’estil <code class="docutils literal"><span class="pre">MAJOR.MINOR.PATCH</span></code>.</p>
+<p class="last">Cal escollir una política de versions adient a cada projecte. Cada
+comunitat tecnològica (Java, Python, Drupal, etcètera) pot tenir una
+política de versions preferent i és aconsellable informar-se de quina és
+i adherir-s’hi. En cas que no hi hagi una política clara podem
+adherir-nos a una política genèrica i ben coneguda, com el <a class="reference external" href="http://semver">Semantic
+Versioning</a>.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="formats-i-estandards-oberts">
+<h2>3.5. Formats i estàndards oberts<a class="headerlink" href="#formats-i-estandards-oberts" title="Link permanent a aquest títol">¶</a></h2>
+<span id="M_F7E6A"></span><dl class="need need-mesura docutils" id="m-f7e6a">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Comprovar que la interfície d’usuari que compleix amb els estàndards del W3C, en cas d’aplicacions web</span> <span class="needs-id">M_F7E6A</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p class="last">Les interfícies web d’usuari, tant les d’ús per als ciutadans com les
+d’administració i ús intern, han de complir amb els estàndards del World
+Wide Web Consortium (W3C) i no han de requerir l’ús de funcionalitats
+proporcionades per extensions propietàries dels navegadors. La
+presentació s’ha de visualitzar correctament, i el producte ha de ser
+plenament funcional, amb els navegadors de la família Gecko (Firefox),
+WebKit/Blink (Chrome, Safari, Konqueror) o Trident/EdgeHTML (Microsoft).</p>
+</dd>
+</dl>
+<span id="M_6765C"></span><dl class="need need-mesura docutils" id="m-6765c">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Utilitzar formats oberts en l’intercanvi de documents amb el ciutadà i amb altres sistemes</span> <span class="needs-id">M_6765C</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p class="last">Tot l’intercanvi de documents amb el ciutadà que impliqui la descàrrega
+o càrrega de fitxers s’ha de produir exclusivament amb formats oberts,
+segons la definició que en dona la Guia de Compra Tecnològica de
+l’Ajuntament de Barcelona. L’emmagatzematge intern de documents per part
+de l’aplicació es produirà també en aquests mateixos formats. En
+particular, tot l’intercanvi de fitxers de text es farà o bé mitjançant
+OpenDocument Format (<a class="reference external" href="https://www.oasis-open.org">https://www.oasis-open.org</a>), o bé en format PDF.
+L’intercanvi d’imatges, àudio i vídeo també es realitzarà mitjançant
+formats oberts pels quals existeixin implementacions lliures en les
+principals plataformes informàtiques incloent GNU/Linux.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="internacionalitzacio">
+<h2>3.6. Internacionalització<a class="headerlink" href="#internacionalitzacio" title="Link permanent a aquest títol">¶</a></h2>
+<span id="M_1E581"></span><dl class="need need-mesura docutils" id="m-1e581">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Definir i pressupostar els requeriments tècnics per què el producte pugui ser traduït i internacionalitzat</span> <span class="needs-id">M_1E581</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Contractar</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p class="last">Tots els missatges mostrats a l’usuari han d’estar internacionalitzats.
+Utilitzar els mecanismes habituals en cada llenguatge/plataforma.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="obrir-un-codi-que-era-tancat">
+<h2>3.7. Obrir un codi que era tancat<a class="headerlink" href="#obrir-un-codi-que-era-tancat" title="Link permanent a aquest títol">¶</a></h2>
+<span id="M_932FB"></span><dl class="need need-mesura docutils" id="m-932fb">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Jutjar la conveniència o no de publicar un codi en poder de l’Ajuntament</span> <span class="needs-id">M_932FB</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Abans de publicar sota llicència lliure un component o sistema software
+ja existent i en ús a l’Ajuntament de Barcelona cal comprovar que:</p>
+<ul class="last simple">
+<li>Correspon a una necessitat general: pot ser d’utilitat per a més
+institucions o organitzacions, a més de l’Ajuntament.</li>
+<li>Té algun aspecte que el diferencia favorablement d’altres solucions
+obertes existents.</li>
+<li>L’Ajuntament de Barcelona és titular legal de tot el codi que es
+pretén alliberar, o pot fer gestions per obtenir aquesta titularitat.</li>
+<li>Es pot executar sobre plataformes lliures.</li>
+<li>El codi (i la documentació associada) té la qualitat i la maduresa
+suficients, o bé els requeriments de millora estan clarament
+identificats i existeix una estratègia per abordar-los.</li>
+<li>L’obertura de la solució no suposarà riscos legals per a cap part.</li>
+<li>Es disposa dels recursos per respondre a incidències de manteniment
+mentre no es traspassi aquesta responsabilitat a d’altres entitats,
+possiblement una comunitat oberta de desenvolupadors i usuaris.</li>
+</ul>
+</dd>
+</dl>
+<span id="M_A6AA6"></span><dl class="need need-mesura docutils" id="m-a6aa6">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Buscar al repositori de codi informació sensible o configuracions d’usuari</span> <span class="needs-id">M_A6AA6</span></dt>
+<dd><div class="first last line-block">
+<div class="line">tags: <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+</dd>
+</dl>
+<span id="M_B7730"></span><dl class="need need-mesura docutils" id="m-b7730">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Avisar als nous espais públics orientats a desenvolupadors que aquest era un projecte tancat</span> <span class="needs-id">M_B7730</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Es tracta d’explicar que el projecte ha funcionat fins a un determinat
+moment com un projecte tancat i per tant cal esperar certes
+inconveniències. Convé reduir les expectatives del nous usuaris i
+desenvolupadors en quant a qualitat i transparència d’alguns elements
+del projecte. S’han d’explicar els compromisos als que s’ha hagut
+d’arribar per fer possible l’obertura. Per exemple, és possible que en
+el repositori de codi hi hagi moltes dades sensibles (dades d’usuaris
+concrets, etc.) i que s’hagi optat per perdre l’historial del control de
+versions i crear un repositori nou <em>top-skim</em> que només contingui la
+darrera versió..</p>
+<p>Aquesta informació convé publicar-la com a mínim a:</p>
+<ul class="simple">
+<li>La web de desenvolupament (ara pública i oberta).</li>
+<li>Llistes de correu públiques.</li>
+</ul>
+<p class="last">L’objectiu d’aquesta mesura és evitar un allau de peticions
+inassumibles.</p>
+</dd>
+</dl>
+<span id="R_70F3E"></span><dl class="need need-recomanacio docutils" id="r-70f3e">
+<dt><span class="needs-type">Recomanació</span>: <span class="needs-title">Avisar als desenvolupadors de les possibles conseqüències de la imminent obertura del projecte</span> <span class="needs-id">R_70F3E</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p class="last">Si tenim alguna manera, per exemple mitjançant llistes de correu
+privades, d’accedir a les persones que han participat o que participen
+en un projecte que anem a obrir, és convenient notificar aquest fet. El
+fet d’obrir un codi que no es va escriure des de l’inici per ser obert
+pot provocar incomoditat als seus autors, i cal explicar que això és
+normal. Es pot referir el següent treball per ajudar a aclarir la
+situació: <a class="reference external" href="http://producingoss.com/en/opening-closed-projects.html">http://producingoss.com/en/opening-closed-projects.html</a>.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="AspectesLegals.html" class="btn btn-neutral float-right" title="4. Aspectes legals" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Organitzacio.html" class="btn btn-neutral" title="2. Organització d’aquesta guia" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 
+    2018 Ajuntament de Barcelona.
+    <br/>
+    Aquest document es distribueix sota llicència
+    <a href=https://creativecommons.org/licenses/by-sa/4.0/>CC-BY-SA-4.0</a>
+.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Other Versions</span>
+        v: master
+        <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+        <dl>
+            <dt>Branches</dt>
+            <dd><a href="master/DesenvolupamentEnObert.html">master</a></dd>
+        </dl>
+    </div>
+</div>
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
