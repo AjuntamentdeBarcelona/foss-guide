@@ -1,0 +1,820 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>5. Gestió de components &mdash; Guia per gestionar projectes de Programari Lliure 0.1 documentació</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/banner.css" type="text/css" />
+  
+    <link rel="stylesheet" href="_static/sphinx-needs/modern.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Índex"
+              href="genindex.html"/>
+        <link rel="search" title="Cerca" href="search.html"/>
+    <link rel="top" title="Guia per gestionar projectes de Programari Lliure 0.1 documentació" href="index.html"/>
+        <link rel="next" title="6. Comunitats obertes" href="ComunitatsObertes.html"/>
+        <link rel="prev" title="4. Infraestructura tècnica" href="InfraestructuraTecnica.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Guia per gestionar projectes de Programari Lliure
+          
+
+          
+            
+            <img src="_static/CS5_marca_1_tinta.svg" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Continguts:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduccio.html">1. Introducció</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Organitzacio.html">2. Organització d’aquesta guia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DesenvolupamentEnObert.html">3. Desenvolupament «en obert»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="InfraestructuraTecnica.html">4. Infraestructura tècnica</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. Gestió de components</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#cerca-i-seleccio-de-components-de-codi-obert">5.1. Cerca i selecció de components de codi obert</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gestio-de-dependencies">5.2. Gestió de dependències</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#substitucio-de-serveis-privatius-habituals">5.3. Substitució de serveis privatius habituals</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ComunitatsObertes.html">6. Comunitats obertes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AspectesLegals.html">7. Aspectes legals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Documentacio.html">8. Documentació</a></li>
+<li class="toctree-l1"><a class="reference internal" href="LlistatsDeMesures.html">9. Annex: Llistats de mesures i recomanacions per etiquetes</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Guia per gestionar projectes de Programari Lliure</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>5. Gestió de components</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Components.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+
+
+
+
+
+<div class="section" id="gestio-de-components">
+<h1>5. Gestió de components<a class="headerlink" href="#gestio-de-components" title="Link permanent a aquest títol">¶</a></h1>
+<div class="section" id="cerca-i-seleccio-de-components-de-codi-obert">
+<h2>5.1. Cerca i selecció de components de codi obert<a class="headerlink" href="#cerca-i-seleccio-de-components-de-codi-obert" title="Link permanent a aquest títol">¶</a></h2>
+<p>A no ser que la nostra necessitat sigui molt especialitzada, és probable que ja
+existeixi una solució lliure (o combinació de solucions) que resolgui el
+problema, com a mínim en part.</p>
+<p>Cal tenir en compte que els projectes de codi obert ofereixen més possibilitats
+de transformació i adaptació a les nostres necessitats que les aplicacions
+tradicionals.</p>
+<p>Conèixer si un projecte s’adequa a les nostres necessitats i compleix amb els
+mínims exigibles a nivell tècnic, legal i social pot resultar costós. Però els
+beneficis de trobar un projecte existent al que sumar-se, enlloc d’inventar
+novament la roda (i evitar l’anomenat <strong>síndrome «Not invented here, NIH»</strong>)
+poden ser extraordinaris, tant a curt com a llarg termini:</p>
+<ul class="simple">
+<li>Pot ser que d’entrada moltes de les funcionalitats que necessitem ja estiguin
+implementades, i puguem construir molt ràpidament prototips i proves de
+concepte.</li>
+<li>Podem beneficiar-nos de l’experiència adquirida per altres usuaris que ja han
+intentat implantar un sistema semblant al que volem, potser descobrint
+oportunitats que no havíem pensat.</li>
+<li>Podem compartir la despesa de construir una eina complexa amb d’altres usuaris
+i entitats. Això inclou potencials futures funcionalitats i ampliacions, que
+poden interessar també a d’altres usuaris.</li>
+<li>Si el producte té una base d’usuaris suficients, obtenim una eina que
+evoluciona en el temps, millorant amb les aportacions d’altres parts,
+adaptant-se a futurs canvis tecnològics, incorporant noves funcionalitats
+nostres o de tercers. Amb molt poca despesa en manteniment obtenim
+sostenibilitat a llarg plaç i una reducció del perill de crear <strong>deute
+tecnològic</strong>.</li>
+</ul>
+<span id="M_323"></span><dl class="need need-mesura docutils" id="m-323">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Buscar un projecte o component existent que resolgui el problema, potser parcialment</span> <span class="needs-id">M_323</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Avantprojecte</span> <span class="needs-tag">Integració</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>A més de fer servir dels motors de cerca habituals, convé buscar directament
+a llocs com:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/">GitHub</a></li>
+<li><a class="reference external" href="https://freshcode.club/">Freshcode.club</a></li>
+<li><a class="reference external" href="https://openhub.net/">OpenHub</a></li>
+<li><a class="reference external" href="https://joinup.ec.europa.eu/solutions">Repositori de solucions de la iniciativa Joinup de la UE</a></li>
+<li><a class="reference external" href="https://administracionelectronica.gob.es/ctt/buscadorSoluciones.htm">Cercador de solucions del Centro de Transferencia de Tecnología</a></li>
+</ul>
+<p>Depenent de la plataforma o arquitectura tecnològica amb la que es treballi,
+també cal cercar en repositoris especialitzats, tals com:</p>
+<ul class="last simple">
+<li>Repositori de Drupal</li>
+<li>Repositori de CKAN</li>
+</ul>
+</dd>
+</dl>
+<span id="M_408"></span><dl class="need need-mesura docutils" id="m-408">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Omplir una graella comparativa dels diferents components a avaluar per cobrir una necessitat</span> <span class="needs-id">M_408</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Avantprojecte</span> <span class="needs-tag">Integració</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span><a class="reference internal" href="#S_58B" title="M_408"><em class="xref need_outgoing">S_58B</em></a> <a class="reference internal" href="#S_453" title="M_408"><em class="xref need_outgoing">S_453</em></a> <a class="reference internal" href="#S_223" title="M_408"><em class="xref need_outgoing">S_223</em></a> <a class="reference internal" href="#S_5BD" title="M_408"><em class="xref need_outgoing">S_5BD</em></a> <a class="reference internal" href="#S_160" title="M_408"><em class="xref need_outgoing">S_160</em></a> <a class="reference internal" href="#S_0F3" title="M_408"><em class="xref need_outgoing">S_0F3</em></a> <a class="reference internal" href="#S_1C4" title="M_408"><em class="xref need_outgoing">S_1C4</em></a> <a class="reference internal" href="#S_24A" title="M_408"><em class="xref need_outgoing">S_24A</em></a> <a class="reference internal" href="#S_2F1" title="M_408"><em class="xref need_outgoing">S_2F1</em></a></span></div>
+</div>
+<p>Això pot haver-se de repetir per cadascun dels components d’un sistema.</p>
+<p>Exemple de graella:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Element</th>
+<th class="head">Component A</th>
+<th class="head">Component B</th>
+<th class="head">Component C</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Nom</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Llicència (i
+condicions que
+ens poden
+afectar)</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>% de la
+funcionalitat
+que necessitem</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Projectes IMI
+que ja
+l’utilitzen i
+persones
+familiaritzades</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Suport
+comercial</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Altres
+organitzacions
+grans que
+l’utilitzen</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Activitat al
+<em>bug tracker</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Diversitat de
+<em>commits</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Diversitat
+d’organitzacion
+s</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>To i utilitat
+dels fòrums de
+discussió</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Comunicació
+pública del
+projecte</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Mètriques de
+qualitat del
+codi</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>Altres
+consideracions</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>Altres coses que es poden tenir en compte, a més de les sub-mesures de més
+avall:</p>
+<ul class="last simple">
+<li>Facilitat d’adaptació i evolució dels diferents components</li>
+<li>Cost immediat i cost a llarg termini, incloent els costos de sortida</li>
+<li>Existència d’una comunitat informal o xarxa de suport local i global</li>
+<li>Solucions innovadores (i valor que això aporta)</li>
+<li>Impacte sobre la privacitat i la sobirania de dades</li>
+</ul>
+</dd>
+</dl>
+<span id="S_58B"></span><span id="mesura-s-58b"></span><dl class="need need-submesura docutils" id="s-58b">
+<dt><span class="needs-type">Submesura</span>: <span class="needs-title">Triar components amb una llicència aprovada per la OSI o per la FSF</span> <span class="needs-id">S_58B</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Integració</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span></div>
+<div class="line">links incoming: <span><a class="reference internal" href="#M_408" title="S_58B"><em class="xref need_incoming">M_408</em></a></span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Els dos conjunts de llicències vàlides son gairebé idèntics:</p>
+<ul class="last simple">
+<li><a class="reference external" href="https://opensource.org/licenses">https://opensource.org/licenses</a></li>
+<li><a class="reference external" href="https://www.gnu.org/licenses/license-list.en.html">https://www.gnu.org/licenses/license-list.en.html</a></li>
+</ul>
+</dd>
+</dl>
+<span id="S_453"></span><dl class="need need-submesura docutils" id="s-453">
+<dt><span class="needs-type">Submesura</span>: <span class="needs-title">Afavorir components amb una major diversitat i pes dels contribuïdors</span> <span class="needs-id">S_453</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Avantprojecte</span> <span class="needs-tag">Integració</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span></div>
+<div class="line">links incoming: <span><a class="reference internal" href="#M_408" title="S_453"><em class="xref need_incoming">M_408</em></a></span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Aquí entenem contribucions en un sentit ampli: <em>commits</em> al repositori de
+codi, <em>bug reports</em>, traduccions, etc.</p>
+<p>És més important la diversitat (persones i entitats diferents que participen)
+que la quantitat de les contribucions (per exemple, nombre de <em>commits</em> per
+mes).</p>
+<p class="last">Si el component presenta contribucions per part d’organitzacions importants
+(empreses d’una certa mida, universitats, institucions), és més probable que
+encara que algun dels contribuïdors falli el projecte continuï. Però també
+pot ser molt bona senyal que moltes persones a títol individual facin
+contribucions i que es tinguin en compte.</p>
+</dd>
+</dl>
+<span id="S_223"></span><dl class="need need-submesura docutils" id="s-223">
+<dt><span class="needs-type">Submesura</span>: <span class="needs-title">Afavorir components amb activitat recent</span> <span class="needs-id">S_223</span></dt>
+<dd><div class="first line-block">
+<div class="line">links incoming: <span><a class="reference internal" href="#M_408" title="S_223"><em class="xref need_incoming">M_408</em></a></span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Primer de tot cal mirar l’activitat al <em>bug tracker</em>, observant:</p>
+<ul class="simple">
+<li>Quantitat de notificacions de deficiències. No ens ha d’espantar que hi
+hagi moltes notificacions obertes i no resoltes, el nombre d’incidències
+tendeix a créixer linealment amb el nombre d’usuaris, però en canvi el
+nombre de desenvolupadors acostuma a créixer més lentament.</li>
+<li>Que els desenvolupadors estiguin responent a les incidències. Insistim: si
+el nombre d’usuaris és gran, hi haurà sempre moltes incidències obertes,
+però sí és important observar que els desenvolupadors participen
+habitualment al <em>bug tracker</em>, que no l’hagin abandonat.</li>
+</ul>
+<p>Després cal mirar l’activitat pública del projecte, tenint en compte:</p>
+<ul class="last simple">
+<li>Antiguitat de les darreres <em>releases</em> públiques, notícies publicades en
+forma de blog o similar.</li>
+<li>El to, la utilitat i la diversitat de participants en el fòrums de
+discussió i canals de comunicació públics del projecte.</li>
+</ul>
+</dd>
+</dl>
+<span id="S_5BD"></span><dl class="need need-submesura docutils" id="s-5bd">
+<dt><span class="needs-type">Submesura</span>: <span class="needs-title">Afavorir components amb una documentació complerta i al dia</span> <span class="needs-id">S_5BD</span></dt>
+<dd><div class="first line-block">
+<div class="line">links incoming: <span><a class="reference internal" href="#M_408" title="S_5BD"><em class="xref need_incoming">M_408</em></a></span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p class="last">Que la documentació estigui en un repositori públic i que hi hagi una bona
+diversitat de persones que hi contribueixin també és un molt bon senyal.</p>
+</dd>
+</dl>
+<span id="S_160"></span><dl class="need need-submesura docutils" id="s-160">
+<dt><span class="needs-type">Submesura</span>: <span class="needs-title">Afavorir components per als quals existeixi suport comercial</span> <span class="needs-id">S_160</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Avantprojecte</span> <span class="needs-tag">Integració</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span></div>
+<div class="line">links incoming: <span><a class="reference internal" href="#M_408" title="S_160"><em class="xref need_incoming">M_408</em></a></span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>En productes amb llicència lliure sempre serà possible contractar algú per
+tal que els modifiqui, mantingui o resolgui problemes. No obstant això,
+obtenim una major garantia d’èxit si ja existeixen empreses o persones que
+ofereixen suport professional sobre el component en qüestió, i que per tant
+cal assumir que el coneixen bé.</p>
+<p>És millor que hi hagi diferents empreses oferint serveis comercials sobre el
+producte que no només una, ja que en aquest segon cas incorreríem en una
+dependència més forta cap a aquests empresa. És habitual un model de negoci
+en el que la mateixa empresa que desenvolupa el producte (potser sense gaire
+suport comunitari extern) ofereix també suport comercial sobre el mateix. No
+s’ha de descartar de per sí, però és millor que el suport professional
+es trobi diversificat.</p>
+<p class="last">L’existència d’empreses que ja d’entrada ofereixen serveis professionals
+sobre un producte pot facilitar també realitzar una avaluació temptativa del
+cost que suposarà adaptar-lo o mantenir-lo.</p>
+</dd>
+</dl>
+<span id="S_0F3"></span><dl class="need need-submesura docutils" id="s-0f3">
+<dt><span class="needs-type">Submesura</span>: <span class="needs-title">Afavorir components que facilitin l’accés a la informació sobre el desenvolupament i la instal·lació</span> <span class="needs-id">S_0F3</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Avantprojecte</span> <span class="needs-tag">Integració</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span></div>
+<div class="line">links incoming: <span><a class="reference internal" href="#M_408" title="S_0F3"><em class="xref need_incoming">M_408</em></a></span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>La transparència és un pilar bàsic dels projectes de programari lliure, sense
+el qual és molt difícil que tota la resta funcioni bé.</p>
+<p class="last">Que un component ofereixi instruccions detallades i precises do com
+instal·lar-lo facilita que es pugui fer una avaluació tècnica independent del
+mateix.</p>
+</dd>
+</dl>
+<span id="S_1C4"></span><dl class="need need-submesura docutils" id="s-1c4">
+<dt><span class="needs-type">Submesura</span>: <span class="needs-title">Afavorir components amb bones mètriques de qualitat del codi</span> <span class="needs-id">S_1C4</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Avantprojecte</span> <span class="needs-tag">Integració</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span></div>
+<div class="line">links incoming: <span><a class="reference internal" href="#M_408" title="S_1C4"><em class="xref need_incoming">M_408</em></a></span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>El fet que tant el codi com les eines de gestió de projectes (<em>bug-trackers</em>,
+llistes de correu, fòrums) siguin públiques fa que sobre els projectes de
+programari lliure sigui possible extreure algunes mètriques objectives molt
+difícils d’aconseguir en el cas de programari privatiu.</p>
+<p>Algunes mètriques que es poden obtenir per certs projectes:</p>
+<ul class="last simple">
+<li>Quantitat de comentaris, a <a class="reference external" href="https://openhub.net/">OpenHub</a>.</li>
+<li>Percentatge de codi cobert pels casos de prova.</li>
+</ul>
+</dd>
+</dl>
+<span id="S_24A"></span><dl class="need need-submesura docutils" id="s-24a">
+<dt><span class="needs-type">Submesura</span>: <span class="needs-title">Afavorir components amb els que l’IMI ja ha adquirit familiaritat</span> <span class="needs-id">S_24A</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Avantprojecte</span> <span class="needs-tag">Integració</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span></div>
+<div class="line">links incoming: <span><a class="reference internal" href="#M_408" title="S_24A"><em class="xref need_incoming">M_408</em></a></span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Quan necessitem adaptar un component de codi obert ja existent, conèixer per
+endavant el projecte i la comunitat que el sustenta presenta molts
+avantatges:</p>
+<ul class="last simple">
+<li>Pot ser que l’IMI tingui ja identificades persones clau dins la comunitat.</li>
+<li>Es pot fer una estimació més realista del cost en temps i en diners de les
+modificacions que es pretén fer, i de les possibilitats que siguin
+integrades al producte original.</li>
+</ul>
+</dd>
+</dl>
+<span id="S_79A"></span><dl class="need need-submesura docutils" id="s-79a">
+<dt><span class="needs-type">Submesura</span>: <span class="needs-title">Afavorir components amb una llicència compatible amb la GPL</span> <span class="needs-id">S_79A</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Integració</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Aquesta informació la dona la Free Software Foundation al seu llistat de
+llicències: <a class="reference external" href="https://www.gnu.org/licenses/license-list.en.html">https://www.gnu.org/licenses/license-list.en.html</a>.</p>
+<p class="last">Les llicències de la família de la GPL son unes de les més comunes. Per
+evitar conflictes de llicència amb altres components que possiblement
+necessitarem, convé que tots els nostres components siguin compatibles amb
+GPL.</p>
+</dd>
+</dl>
+<span id="S_2F1"></span><dl class="need need-submesura docutils" id="s-2f1">
+<dt><span class="needs-type">Submesura</span>: <span class="needs-title">Afavorir components que formin part de la distribució estable de Debian</span> <span class="needs-id">S_2F1</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Avantprojecte</span> <span class="needs-tag">Integració</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span></div>
+<div class="line">links incoming: <span><a class="reference internal" href="#M_408" title="S_2F1"><em class="xref need_incoming">M_408</em></a></span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Tot component de la solució que estigui inclòs en la distribució Estable de
+Debian en el moment de dissenyar el projecte, o que es pugui executar sobre
+Debian Estable sense necessitat d’adaptació, i que sigui multi-arquitectura,
+es considera un component durador i fiable.</p>
+<p>Si més no, afavorir components que puguin executar-se, en la seva versió
+estàndard descarregable a la web del projecte, sobre plataformes lliures,
+preferiblement GNU/Linux i sense que existeixin restriccions en quant a:</p>
+<ul class="last simple">
+<li>Requerir una distribució particular de GNU/Linux (per exemple un programari
+que només s’executi en entorns CentOS i no sobre Debian).</li>
+<li>Versions massa específiques dels elements principals de la plataforma,
+sobretot si es tracta de versions massa antigues o fora del seu període de
+manteniment estàndard (per exemple un programari que requereixi un kernel
+de Linux en una versió 3.*, o unes llibreries bàsiques del sistema
+desfasades).</li>
+<li>Requerir una arquitectura de hardware específica (per exemple, solucions
+que només s’executin en màquines Intel).</li>
+</ul>
+</dd>
+</dl>
+<span id="M_B61"></span><dl class="need need-mesura docutils" id="m-b61">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Considerar totes les possibilitats i totes les implicacions abans d’iniciar un fork social</span> <span class="needs-id">M_B61</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Avantprojecte</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">NouProducte</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Quan es disposa d’un codi que ha estat publicat amb llicència lliure però es
+necessita evolucionar el producte en una direcció incompatible amb els plans
+de qui governa el projecte, pot ser necessari fer un <em>fork</em> (en el sentit
+fort del terme, o «<em>fork</em> social»).</p>
+<p class="last">Fer un <em>fork</em> té molts inconvenients, i per tant ha de ser un últim recurs.
+D’una banda, dificulta molt compartir codi amb el producte original a partir
+del moment del <em>fork</em>. I potser més significatiu, suposa dividir la comunitat
+original i obligar a cada desenvolupador a decidir quin projecte prioritza.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="gestio-de-dependencies">
+<h2>5.2. Gestió de dependències<a class="headerlink" href="#gestio-de-dependencies" title="Link permanent a aquest títol">¶</a></h2>
+<span id="M_0C2"></span><dl class="need need-mesura docutils" id="m-0c2">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Dur un registre exhaustiu de tots els paquets de programari utilitzats, que han de ser lliures</span> <span class="needs-id">M_0C2</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Contractar</span> <span class="needs-tag">Integració</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>En cas de contracte, posar-ho als plecs i afegir que l’IMI té l’última
+paraula sobre la inclusió d’una dependència.</p>
+<div class="admonition-exemple-de-clausula-gestio-de-les-dependencies-de-programari last admonition">
+<p class="first admonition-title">Exemple de clàusula: <strong>Gestió de les dependències de programari</strong>.</p>
+<p class="last">L’adjudicatari durà un registre exhaustiu de tots els paquets de
+programari utilitzats en la solució, que han d’estar distribuïts sota una
+llicència de programari acceptada per la Open Source Initiative (OSI,
+<a class="reference external" href="https://opensource.org/licenses">https://opensource.org/licenses</a>) o bé pel projecte GNU
+(<a class="reference external" href="https://www.gnu.org/licenses/license-list.en.html">https://www.gnu.org/licenses/license-list.en.html</a>). Com a requisit
+addicional, la llicència de tots els paquets utilitzats no ha de produir
+problemes d’incompatibilitat amb la llicència principal del producte, la
+EUPL-1.2. L’Ajuntament de Barcelona es reserva la potestat d’exigir que es
+retiri una dependència de programari del producte si considera que pot
+constituir un risc legal i l’adjudicatari està obligat a substituir el
+paquet per un altre, o bé cobrir la funcionalitat amb desenvolupament
+propi.</p>
+</div>
+</dd>
+</dl>
+<span id="R_5D2"></span><dl class="need need-recomanacio docutils" id="r-5d2">
+<dt><span class="needs-type">Recomanació</span>: <span class="needs-title">Utilitzar un programari de monitorització de llicències</span> <span class="needs-id">R_5D2</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Integració</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Com per exemple:</p>
+<ul class="last simple">
+<li><a class="reference external" href="https://www.fossology.org/">https://www.fossology.org/</a></li>
+<li><a class="reference external" href="http://creadur.apache.org/">http://creadur.apache.org/</a></li>
+</ul>
+</dd>
+</dl>
+<span id="M_582"></span><dl class="need need-mesura docutils" id="m-582">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">No copiar dependències externes al repositori si no és per una causa excepcional</span> <span class="needs-id">M_582</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>A vegades es decideix copiar un sub-component que es troba disponible en un
+repositori propi al repositori del component que estem construint (sigui en
+forma de codi font, binari o de <em>bytecode</em>). Es diu que aquesta dependència
+es troba <em>bundled</em>. A vegades es busca amb això un desplegament o un cicle de
+desenvolupament més senzill, però es considera una mala pràctica ja que:</p>
+<ul class="simple">
+<li>Els canvis i actualitzacions en el sub-component embruten la història de
+canvis del component principal.</li>
+<li>És més difícil donar compte correctament de la autoria i llicenciament de
+cada part del codi.</li>
+</ul>
+<p class="last">Poden donar-se circumstàncies excepcionals que justifiquin no obeir aquesta
+mesura.</p>
+</dd>
+</dl>
+<span id="M_CA0"></span><dl class="need need-mesura docutils" id="m-ca0">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Buscar les dependències inadequades i trobar substituts amb llicència lliure</span> <span class="needs-id">M_CA0</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>S’han d’eliminar els components:</p>
+<ul class="last simple">
+<li>Amb llicència propietària.</li>
+<li>Propietat de l’Ajuntament de Barcelona, però que de moment no es puguin
+obrir.</li>
+<li>Que presentin algun tipus d’incompatibilitat de llicència amb altres
+components del producte a obrir.</li>
+<li>Que no puguin ser instal·lats en un sistema operatiu lliure.</li>
+</ul>
+</dd>
+</dl>
+<span id="R_377"></span><dl class="need need-recomanacio docutils" id="r-377">
+<dt><span class="needs-type">Recomanació</span>: <span class="needs-title">Finançar una auditoria de seguretat del component a utilitzar</span> <span class="needs-id">R_377</span></dt>
+<dd><div class="first last line-block">
+<div class="line">tags: <span class="needs-tag">Integració</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+</dd>
+</dl>
+<span id="R_D16"></span><dl class="need need-recomanacio docutils" id="r-d16">
+<dt><span class="needs-type">Recomanació</span>: <span class="needs-title">Finançar trobades i hackatons relacionades amb el component a utilitzar</span> <span class="needs-id">R_D16</span></dt>
+<dd><div class="first last line-block">
+<div class="line">tags: <span class="needs-tag">Integració</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+</dd>
+</dl>
+<span id="R_BBA"></span><dl class="need need-recomanacio docutils" id="r-bba">
+<dt><span class="needs-type">Recomanació</span>: <span class="needs-title">Integrar personal de l’IMI en les tasques de desenvolupament</span> <span class="needs-id">R_BBA</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Contractar</span> <span class="needs-tag">Integració</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p>Es pot establir per contracte i pot ser qualsevol tasca relacionada amb
+el desenvolupament:</p>
+<ul class="simple">
+<li>Escriptura de codi</li>
+<li>Escriptura de documentació</li>
+<li>Revisions de codi</li>
+<li>Creació, execució i anàlisi de bateries de proves</li>
+</ul>
+<p class="last">L’objectiu és tenir personal propi familiaritzat amb un programari que es
+seguirà utilitzant en el futur, un cop s’acabi el contracte de
+desenvolupament actual. Es tracta d’aprofundir en la sobirania i evitar el
+màxim la dependència de proveïdors únics.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="substitucio-de-serveis-privatius-habituals">
+<h2>5.3. Substitució de serveis privatius habituals<a class="headerlink" href="#substitucio-de-serveis-privatius-habituals" title="Link permanent a aquest títol">¶</a></h2>
+<span id="M_116"></span><dl class="need need-mesura docutils" id="m-116">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Utilitzar Piwik (si es necessita una eina d’analítica web)</span> <span class="needs-id">M_116</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Contractar</span> <span class="needs-tag">Integració</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p class="last">No utilitzar Google Analytics. Utilitzar eines com Piwik en el seu lloc.</p>
+</dd>
+</dl>
+<span id="M_CDB"></span><dl class="need need-mesura docutils" id="m-cdb">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Publicar apps Android a F-Droid (Si un dels productes és una app Android)</span> <span class="needs-id">M_CDB</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Integració</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p class="last">En el cas d’apps per la plataforma Android, publicar les apps al repositori
+lliure F-Droid, a més del repositori Google Play o aquells que més gent
+utilitzi.</p>
+</dd>
+</dl>
+<span id="M_600"></span><dl class="need need-mesura docutils" id="m-600">
+<dt><span class="needs-type">Mesura</span>: <span class="needs-title">Utilitzar OpenStreetMap (si es necessita presentar informació cartogràfica present en aquesta eina)</span> <span class="needs-id">M_600</span></dt>
+<dd><div class="first line-block">
+<div class="line">tags: <span class="needs-tag">Contractar</span> <span class="needs-tag">Integració</span> <span class="needs-tag">Adaptació</span> <span class="needs-tag">Plugin</span> <span class="needs-tag">NouProducte</span> <span class="needs-tag">Publicació</span></div>
+<div class="line">links incoming: <span>None</span></div>
+<div class="line">links outgoing: <span>None</span></div>
+</div>
+<p class="last">No utilitzar Google Maps.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ComunitatsObertes.html" class="btn btn-neutral float-right" title="6. Comunitats obertes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="InfraestructuraTecnica.html" class="btn btn-neutral" title="4. Infraestructura tècnica" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 
+    2018 Ajuntament de Barcelona.
+    <br/>
+    Aquest document es distribueix sota llicència
+    <a href=https://creativecommons.org/licenses/by-sa/4.0/>CC-BY-SA-4.0</a>
+.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Other Versions</span>
+        v: master
+        <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+        <dl>
+            <dt>Branches</dt>
+            <dd><a href="Components.html">master</a></dd>
+        </dl>
+    </div>
+</div>
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
